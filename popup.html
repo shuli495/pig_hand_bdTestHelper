@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>baiduTest</title>
+<link href="css/base_css.css" type="text/css" rel="stylesheet"></link>
+</head>
+<body>
+	<div class="titleStyle">
+		<a id="titleName" class="titleName" href="http://test.baidu.com/crowdtest/activity/gotoActivityMarket#?type=1">众测小猪手</a>
+		&nbsp;<a id="titleMaker" class="titleMaker" href="http://www.wzboxs.com">by wzboxs</a>
+	</div>
+	<div class="contentStyle">
+		选项1&nbsp;<input type="text" id="chkKey1" class="chkKeyInput"/>
+		选项2&nbsp;<input type="text" id="chkKey2" class="chkKeyInput"/>
+		选项3&nbsp;<input type="text" id="chkKey3" class="chkKeyInput"/>
+		选项4&nbsp;<input type="text" id="chkKey4" class="chkKeyInput"/><br/>
+		选项5&nbsp;<input type="text" id="chkKey5" class="chkKeyInput"/>
+		选项6&nbsp;<input type="text" id="chkKey6" class="chkKeyInput"/>
+		选项7&nbsp;<input type="text" id="chkKey7" class="chkKeyInput"/>
+		选项8&nbsp;<input type="text" id="chkKey8" class="chkKeyInput"/>
+		选项9&nbsp;<input type="text" id="chkKey9" class="chkKeyInput"/>
+		<br/><br/>
+
+		确定&nbsp;<input type="radio" name="subKey" id="Tap" value="Tap"/>Tap
+		<input type="radio" name="subKey" id="CapsLk" value="CapsLk"/>CapsLk
+		<input type="radio" name="subKey" id="Shift" value="Shift"/>Shift
+		<input type="radio" name="subKey" id="Ctrl" value="Ctrl"/>Ctrl
+		<input type="radio" name="subKey" id="Alt" value="Alt"/>Alt
+		<input type="radio" name="subKey" id="Space" value="Space"/>空格
+		<input type="radio" name="subKey" id="Custom" value="Custom"/><input type="text" class="customKeyInpt" id="CustomKey"/><br/>
+		跳过&nbsp;<input type="radio" name="jumpKey" id="Esc" value="Esc"/>Esc
+		<br/><br/>
+
+		<input type="checkbox" id="autoSub"/>自动确定&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="checkbox" id="autoTag"/>自动换标签&nbsp;&nbsp;&nbsp;&nbsp;
+		<br/>
+		<input type="checkbox" id="autoScorll"/>自动设置滚动条高度，距底
+		<input type="text" class="customKeyInpt" id="scorllBottom"/>像素&nbsp;&nbsp;&nbsp;&nbsp;
+		<br/>
+		<input type="checkbox" id="autoQuery"/>自动查询新快速判断，间隔
+		<input type="text" class="customKeyInpt" id="queryTime"/>分钟&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" style="saveBut" value="保存设置" id="saveBut" />
+	</div>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+</body>

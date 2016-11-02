@@ -1,0 +1,29 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": "img/icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": ["js/jquery.min.js","js/common.js","js/content.js"],
+      "matches": ["http://test.baidu.com/mark/task/do/id/*"],
+      "run_at": "document_idle"
+   },{
+      "all_frames": true,
+      "js": ["js/common.js","js/querypro.js"],
+      "matches": ["http://test.baidu.com/crowdtest/activity/gotoActivityMarket"],
+      "run_at": "document_end"
+   }],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "百度众测 快速判断题 快捷答题 自动查询新项目 更多功能开发中",
+   "icons": {"48": "img/icon.png"},
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyfmnuLLKdY2QuW8GnG2CDwXQ2FxUBA0Tf2M9gZlufqqc6vZdmaXje5VvOrWU3/xxBBpgNuqn/ID2PPh9v5InEkZwf2WMkoFR0LZQBH+SUB9CfFYKJUeIvycMh0HCJxL900bbmVHH15JULTJd1L+G3ZvHL5E2DGJUdlgkpM1ndKglzJKNHZWVIKuhaJbqnBYS4b9dkqwBKD8416ZsW0+p1i/Sx5Dx6JoV3rbFLr73vn91868iP1rt8uxWEaRsk3zTiG9NrSXvcAKK5mGlcmqZNBVJuN9ypVIs7Ml4AKwf3sfnDKHn3h98ZBb6AQaqCI1QZBYiNnGwG+nb6yutwfn5IwIDAQAB",
+   "manifest_version": 2,
+   "name": "众测小猪手",
+   "permissions": ["tabs", "notifications", "storage", "http://test.baidu.com/*"],
+   "version": "1.0"
+}
