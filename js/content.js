@@ -223,7 +223,6 @@ function diySet(step) {
 					subTopic();
 				}
 			} else {
-				alert("输入验证码！");
 			}
 		});
 	}
